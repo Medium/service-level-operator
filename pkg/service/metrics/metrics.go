@@ -3,7 +3,7 @@ package metrics
 import (
 	"time"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
 )
 
 // Service knows how to monitoring the different parts, flows and processes

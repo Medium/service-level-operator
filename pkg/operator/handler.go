@@ -7,10 +7,10 @@ import (
 
 	"k8s.io/apimachinery/pkg/runtime"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
-	"github.com/spotahome/service-level-operator/pkg/log"
-	"github.com/spotahome/service-level-operator/pkg/service/output"
-	"github.com/spotahome/service-level-operator/pkg/service/sli"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	"github.com/Medium/service-level-operator/pkg/log"
+	"github.com/Medium/service-level-operator/pkg/service/output"
+	"github.com/Medium/service-level-operator/pkg/service/sli"
 )
 
 // Handler is the Operator handler.

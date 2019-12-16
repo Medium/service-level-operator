@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
 )
 
 func TestServiceLevelValidation(t *testing.T) {

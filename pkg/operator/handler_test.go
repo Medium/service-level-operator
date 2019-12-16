@@ -8,13 +8,13 @@ import (
 	"github.com/stretchr/testify/mock"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	moutput "github.com/spotahome/service-level-operator/mocks/service/output"
-	msli "github.com/spotahome/service-level-operator/mocks/service/sli"
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
-	"github.com/spotahome/service-level-operator/pkg/log"
-	"github.com/spotahome/service-level-operator/pkg/operator"
-	"github.com/spotahome/service-level-operator/pkg/service/output"
-	"github.com/spotahome/service-level-operator/pkg/service/sli"
+	moutput "github.com/Medium/service-level-operator/mocks/service/output"
+	msli "github.com/Medium/service-level-operator/mocks/service/sli"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	"github.com/Medium/service-level-operator/pkg/log"
+	"github.com/Medium/service-level-operator/pkg/operator"
+	"github.com/Medium/service-level-operator/pkg/service/output"
+	"github.com/Medium/service-level-operator/pkg/service/sli"
 )
 
 var (

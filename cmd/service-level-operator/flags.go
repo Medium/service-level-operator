@@ -8,7 +8,7 @@ import (
 
 	"k8s.io/client-go/util/homedir"
 
-	"github.com/spotahome/service-level-operator/pkg/operator"
+	"github.com/Medium/service-level-operator/pkg/operator"
 )
 
 // defaults

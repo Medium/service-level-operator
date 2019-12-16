@@ -18,14 +18,14 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	crdcli "github.com/spotahome/service-level-operator/pkg/k8sautogen/client/clientset/versioned"
-	"github.com/spotahome/service-level-operator/pkg/log"
-	"github.com/spotahome/service-level-operator/pkg/operator"
-	kubernetesclifactory "github.com/spotahome/service-level-operator/pkg/service/client/kubernetes"
-	promclifactory "github.com/spotahome/service-level-operator/pkg/service/client/prometheus"
-	"github.com/spotahome/service-level-operator/pkg/service/configuration"
-	kubernetesservice "github.com/spotahome/service-level-operator/pkg/service/kubernetes"
-	"github.com/spotahome/service-level-operator/pkg/service/metrics"
+	crdcli "github.com/Medium/service-level-operator/pkg/k8sautogen/client/clientset/versioned"
+	"github.com/Medium/service-level-operator/pkg/log"
+	"github.com/Medium/service-level-operator/pkg/operator"
+	kubernetesclifactory "github.com/Medium/service-level-operator/pkg/service/client/kubernetes"
+	promclifactory "github.com/Medium/service-level-operator/pkg/service/client/prometheus"
+	"github.com/Medium/service-level-operator/pkg/service/configuration"
+	kubernetesservice "github.com/Medium/service-level-operator/pkg/service/kubernetes"
+	"github.com/Medium/service-level-operator/pkg/service/metrics"
 )
 
 const (

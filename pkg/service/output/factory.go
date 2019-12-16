@@ -3,7 +3,7 @@ package output
 import (
 	"fmt"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
 )
 
 // Factory is a factory that knows how to get the correct

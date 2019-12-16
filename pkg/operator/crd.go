@@ -6,9 +6,9 @@ import (
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/tools/cache"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
-	"github.com/spotahome/service-level-operator/pkg/log"
-	"github.com/spotahome/service-level-operator/pkg/service/kubernetes"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	"github.com/Medium/service-level-operator/pkg/log"
+	"github.com/Medium/service-level-operator/pkg/service/kubernetes"
 )
 
 // serviceLevelCRD is the crd release.

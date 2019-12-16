@@ -3,9 +3,9 @@ package output
 import (
 	"time"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
-	"github.com/spotahome/service-level-operator/pkg/service/metrics"
-	"github.com/spotahome/service-level-operator/pkg/service/sli"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	"github.com/Medium/service-level-operator/pkg/service/metrics"
+	"github.com/Medium/service-level-operator/pkg/service/sli"
 )
 
 // metricsMiddleware will monitoring the calls to the SLO output.

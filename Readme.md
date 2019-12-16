@@ -275,8 +275,8 @@ Check the alert [here][multiwindow-alert]
 
 [travis-image]: https://travis-ci.org/spotahome/service-level-operator.svg?branch=master
 [travis-url]: https://travis-ci.org/spotahome/service-level-operator
-[goreport-image]: https://goreportcard.com/badge/github.com/spotahome/service-level-operator
-[goreport-url]: https://goreportcard.com/report/github.com/spotahome/service-level-operator
+[goreport-image]: https://goreportcard.com/badge/github.com/Medium/service-level-operator
+[goreport-url]: https://goreportcard.com/report/github.com/Medium/service-level-operator
 [quay-image]: https://quay.io/repository/spotahome/service-level-operator/status
 [quay-url]: https://quay.io/repository/spotahome/service-level-operator
 [sre-book-slo]: https://landing.google.com/sre/book/chapters/service-level-objectives.html

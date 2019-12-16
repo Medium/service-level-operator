@@ -19,7 +19,7 @@ limitations under the License.
 package fake
 
 import (
-	v1alpha1 "github.com/spotahome/service-level-operator/pkg/k8sautogen/client/clientset/versioned/typed/monitoring/v1alpha1"
+	v1alpha1 "github.com/Medium/service-level-operator/pkg/k8sautogen/client/clientset/versioned/typed/monitoring/v1alpha1"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
 )

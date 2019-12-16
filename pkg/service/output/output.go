@@ -1,9 +1,9 @@
 package output
 
 import (
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
-	"github.com/spotahome/service-level-operator/pkg/log"
-	"github.com/spotahome/service-level-operator/pkg/service/sli"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	"github.com/Medium/service-level-operator/pkg/log"
+	"github.com/Medium/service-level-operator/pkg/service/sli"
 )
 
 // Output knows how expose/send/create the output of a SLO and SLI result.

@@ -3,7 +3,7 @@
 DIR="$( cd "$( dirname "${0}" )" && pwd )"
 ROOT_DIR=${DIR}/../..
 
-PROJECT_PACKAGE=github.com/spotahome/service-level-operator
+PROJECT_PACKAGE=github.com/Medium/service-level-operator
 IMAGE=quay.io/slok/kube-code-generator:v1.11.3
 
 # Execute once per package because we want independent output specs per kind/version.

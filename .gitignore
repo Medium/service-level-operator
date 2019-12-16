@@ -15,3 +15,7 @@ bin/
 
 # vendor
 vendor/
+
+vscode/
+*.yaml
+*.json
