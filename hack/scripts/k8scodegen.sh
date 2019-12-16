@@ -2,7 +2,7 @@
 
 CODE_GENERATOR_IMAGE=quay.io/slok/kube-code-generator:v1.13.5
 DIRECTORY=${PWD}
-CODE_GENERATOR_PACKAGE=github.com/spotahome/service-level-operator
+CODE_GENERATOR_PACKAGE=github.com/Medium/service-level-operator
 
 docker run --rm -it \
 	-v ${DIRECTORY}:/go/src/${CODE_GENERATOR_PACKAGE} \

@@ -1,4 +1,4 @@
-module github.com/spotahome/service-level-operator
+module github.com/Medium/service-level-operator
 
 require (
 	github.com/go-openapi/spec v0.17.0
@@ -10,7 +10,6 @@ require (
 	github.com/spotahome/kooper v0.6.1-0.20190926114429-1c6a0cfab9a5
 	github.com/stretchr/testify v1.4.0
 	golang.org/x/sync v0.0.0-20190227155943-e225da77a7e6
-	k8s.io/api v0.0.0-20191004102255-dacd7df5a50b // indirect
 	k8s.io/apiextensions-apiserver v0.0.0-20191004105443-a7d558db75c6
 	k8s.io/apimachinery v0.0.0-20191004074956-01f8b7d1121a
 	k8s.io/client-go v0.0.0-20191004102537-eb5b9a8cfde7

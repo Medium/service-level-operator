@@ -10,9 +10,9 @@ import (
 	"k8s.io/client-go/kubernetes"
 	kubernetesfake "k8s.io/client-go/kubernetes/fake"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
-	crdcli "github.com/spotahome/service-level-operator/pkg/k8sautogen/client/clientset/versioned"
-	crdclifake "github.com/spotahome/service-level-operator/pkg/k8sautogen/client/clientset/versioned/fake"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	crdcli "github.com/Medium/service-level-operator/pkg/k8sautogen/client/clientset/versioned"
+	crdclifake "github.com/Medium/service-level-operator/pkg/k8sautogen/client/clientset/versioned/fake"
 )
 
 // fakeFactory is a fake factory that has already loaded faked objects on the Kubernetes clients.

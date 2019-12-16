@@ -19,7 +19,7 @@ limitations under the License.
 package versioned
 
 import (
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/k8sautogen/client/clientset/versioned/typed/monitoring/v1alpha1"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/k8sautogen/client/clientset/versioned/typed/monitoring/v1alpha1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/spotahome/service-level-operator/pkg/service/configuration"
+	"github.com/Medium/service-level-operator/pkg/service/configuration"
 	"github.com/stretchr/testify/assert"
 )
 

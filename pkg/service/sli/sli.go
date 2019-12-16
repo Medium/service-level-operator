@@ -3,7 +3,7 @@ package sli
 import (
 	"fmt"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
 )
 
 // Result is the result of getting a SLI from a backend.

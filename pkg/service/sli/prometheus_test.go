@@ -8,11 +8,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
-	mpromv1 "github.com/spotahome/service-level-operator/mocks/github.com/prometheus/client_golang/api/prometheus/v1"
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
-	"github.com/spotahome/service-level-operator/pkg/log"
-	prometheusvc "github.com/spotahome/service-level-operator/pkg/service/client/prometheus"
-	"github.com/spotahome/service-level-operator/pkg/service/sli"
+	mpromv1 "github.com/Medium/service-level-operator/mocks/github.com/prometheus/client_golang/api/prometheus/v1"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	"github.com/Medium/service-level-operator/pkg/log"
+	prometheusvc "github.com/Medium/service-level-operator/pkg/service/client/prometheus"
+	"github.com/Medium/service-level-operator/pkg/service/sli"
 )
 
 func TestPrometheusRetrieve(t *testing.T) {

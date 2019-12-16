@@ -8,12 +8,12 @@ import (
 	"github.com/spotahome/kooper/operator"
 	"github.com/spotahome/kooper/operator/controller"
 
-	"github.com/spotahome/service-level-operator/pkg/log"
-	promcli "github.com/spotahome/service-level-operator/pkg/service/client/prometheus"
-	"github.com/spotahome/service-level-operator/pkg/service/kubernetes"
-	"github.com/spotahome/service-level-operator/pkg/service/metrics"
-	"github.com/spotahome/service-level-operator/pkg/service/output"
-	"github.com/spotahome/service-level-operator/pkg/service/sli"
+	"github.com/Medium/service-level-operator/pkg/log"
+	promcli "github.com/Medium/service-level-operator/pkg/service/client/prometheus"
+	"github.com/Medium/service-level-operator/pkg/service/kubernetes"
+	"github.com/Medium/service-level-operator/pkg/service/metrics"
+	"github.com/Medium/service-level-operator/pkg/service/output"
+	"github.com/Medium/service-level-operator/pkg/service/sli"
 )
 
 const (

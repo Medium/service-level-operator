@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/spotahome/service-level-operator/pkg/service/client/prometheus"
+	"github.com/Medium/service-level-operator/pkg/service/client/prometheus"
 )
 
 func TestBaseFactoryV1Client(t *testing.T) {

@@ -3,7 +3,7 @@ package sli
 import (
 	"errors"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
 )
 
 // RetrieverFactory is a factory that knows how to get the correct

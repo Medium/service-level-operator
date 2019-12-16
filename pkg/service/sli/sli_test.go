@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/spotahome/service-level-operator/pkg/service/sli"
+	"github.com/Medium/service-level-operator/pkg/service/sli"
 )
 
 func TestSLIResult(t *testing.T) {

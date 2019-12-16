@@ -4,9 +4,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/watch"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
-	crdcli "github.com/spotahome/service-level-operator/pkg/k8sautogen/client/clientset/versioned"
-	"github.com/spotahome/service-level-operator/pkg/log"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	crdcli "github.com/Medium/service-level-operator/pkg/k8sautogen/client/clientset/versioned"
+	"github.com/Medium/service-level-operator/pkg/log"
 )
 
 // ServiceLevel knows how to interact with Kubernetes on the

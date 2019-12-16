@@ -3,8 +3,8 @@ package sli
 import (
 	"time"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
-	"github.com/spotahome/service-level-operator/pkg/service/metrics"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	"github.com/Medium/service-level-operator/pkg/service/metrics"
 )
 
 // metricsMiddleware will monitoring the calls to the SLI Retriever.

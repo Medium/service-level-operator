@@ -10,9 +10,9 @@ import (
 	promv1 "github.com/prometheus/client_golang/api/prometheus/v1"
 	"github.com/prometheus/common/model"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
-	"github.com/spotahome/service-level-operator/pkg/log"
-	promcli "github.com/spotahome/service-level-operator/pkg/service/client/prometheus"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	"github.com/Medium/service-level-operator/pkg/log"
+	promcli "github.com/Medium/service-level-operator/pkg/service/client/prometheus"
 )
 
 const promCliTimeout = 10 * time.Second
