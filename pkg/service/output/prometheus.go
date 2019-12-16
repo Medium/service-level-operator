@@ -2,14 +2,16 @@ package output
 
 import (
 	"fmt"
+	"sort"
+	"strings"
 	"sync"
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	monitoringv1alpha1 "github.com/spotahome/service-level-operator/pkg/apis/monitoring/v1alpha1"
-	"github.com/spotahome/service-level-operator/pkg/log"
-	"github.com/spotahome/service-level-operator/pkg/service/sli"
+	monitoringv1alpha1 "github.com/Medium/service-level-operator/pkg/apis/monitoring/v1alpha1"
+	"github.com/Medium/service-level-operator/pkg/log"
+	"github.com/Medium/service-level-operator/pkg/service/sli"
 )
 
 const (
@@ -90,7 +92,11 @@ func (p *prometheusOutput) Create(serviceLevel *monitoringv1alpha1.ServiceLevel,
 	defer p.metricValuesMu.Unlock()
 
 	// Get the current metrics for the SLO.
-	sloID := fmt.Sprintf("%s-%s-%s", serviceLevel.Namespace, serviceLevel.Name, slo.Name)
+	var labels map[string]string
+	if slo.Output.Prometheus != nil && slo.Output.Prometheus.Labels != nil {
+		labels = slo.Output.Prometheus.Labels
+	}
+	sloID := p.getSLOID(serviceLevel.Namespace, serviceLevel.Name, slo.Name, labels)
 	if _, ok := p.metricValues[sloID]; !ok {
 		p.metricValues[sloID] = &metricValue{}
 	}
@@ -155,6 +161,24 @@ func (p *prometheusOutput) Collect(ch chan<- prometheus.Metric) {
 
 	// Collect all SLOs metric.
 	p.logger.Debugf("finished collecting all the service level metrics")
+}
+
+func (p *prometheusOutput) getSLOID(ns, serviceLevel, slo string, constLabels prometheus.Labels) string {
+	sloID := fmt.Sprintf("%s-%s-%s", serviceLevel, serviceLevel, slo)
+	if len(constLabels) > 0 {
+		keys := make([]string, 0, len(constLabels))
+		labels := make([]string, 0, len(constLabels))
+		for k := range constLabels {
+			keys = append(keys, k)
+		}
+		// sort by key so the sloID is deterministic
+		sort.Strings(keys)
+		for _, k := range keys {
+			labels = append(labels, fmt.Sprintf("%s=%s", k, constLabels[k]))
+		}
+		sloID = fmt.Sprintf("%s-%s", sloID, strings.Join(labels, ","))
+	}
+	return sloID
 }
 
 func (p *prometheusOutput) getSLIErrorMetric(ns, serviceLevel, slo string, constLabels prometheus.Labels, value float64) prometheus.Metric {
