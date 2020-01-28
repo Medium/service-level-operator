@@ -25,6 +25,10 @@ type ServiceLevel struct {
 
 // ServiceLevelSpec is the spec for a ServiceLevel resource.
 type ServiceLevelSpec struct {
+	// ServiceLevelName is override for setting service_level to a value other than the ObjectMeta.Name.
+	// +optional
+	ServiceLevelName string `json:"serviceLevelName,omitempty"`
+
 	// ServiceLevelObjectives is the list of SLOs of a service/app.
 	// +optional
 	ServiceLevelObjectives []SLO `json:"serviceLevelObjectives,omitempty"`

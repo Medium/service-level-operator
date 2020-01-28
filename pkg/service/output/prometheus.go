@@ -147,6 +147,9 @@ func (p *prometheusOutput) Collect(ch chan<- prometheus.Metric) {
 
 		ns := metric.serviceLevel.Namespace
 		slName := metric.serviceLevel.Name
+		if metric.serviceLevel.Spec.ServiceLevelName != "" {
+			slName = metric.serviceLevel.Spec.ServiceLevelName
+		}
 		sloName := metric.slo.Name
 		var labels map[string]string
 		// Check just in case.
@@ -164,7 +167,7 @@ func (p *prometheusOutput) Collect(ch chan<- prometheus.Metric) {
 }
 
 func (p *prometheusOutput) getSLOID(ns, serviceLevel, slo string, constLabels prometheus.Labels) string {
-	sloID := fmt.Sprintf("%s-%s-%s", serviceLevel, serviceLevel, slo)
+	sloID := fmt.Sprintf("%s-%s", serviceLevel, slo)
 	if len(constLabels) > 0 {
 		keys := make([]string, 0, len(constLabels))
 		labels := make([]string, 0, len(constLabels))

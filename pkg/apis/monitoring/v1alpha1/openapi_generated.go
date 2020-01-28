@@ -310,6 +310,13 @@ func schema_pkg_apis_monitoring_v1alpha1_ServiceLevelSpec(ref common.ReferenceCa
 			SchemaProps: spec.SchemaProps{
 				Description: "ServiceLevelSpec is the spec for a ServiceLevel resource.",
 				Properties: map[string]spec.Schema{
+					"serviceLevelName": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ServiceLevelName is override for setting service_level to a value other than the ObjectMeta.Name.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
 					"serviceLevelObjectives": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ServiceLevelObjectives is the list of SLOs of a service/app.",
