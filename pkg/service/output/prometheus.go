@@ -140,7 +140,9 @@ func (p *prometheusOutput) Collect(ch chan<- prometheus.Metric) {
 
 		// If metric has expired then remove from the map.
 		if time.Now().After(metric.expire) {
-			p.logger.With("slo", metric.slo.Name).With("service-level", metric.serviceLevel.Name).Infof("metric expired, removing")
+			if metric.slo != nil && metric.serviceLevel != nil {
+				p.logger.With("slo", metric.slo.Name).With("service-level", metric.serviceLevel.Name).Infof("metric expired, removing")
+			}
 			delete(p.metricValues, id)
 			continue
 		}
